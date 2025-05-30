@@ -1,0 +1,21 @@
+---
+# A trivial Github workflow template
+# Prints a cowsay message based on a file that exists in the repo
+# Requires `.cowsay.txt` to exist in the project root.
+name: "Example workflow template"
+
+"on":
+  pull_request:
+    branches:
+      - "$default-branch"
+
+jobs:
+  cowsay:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Check out repo"
+        uses: "actions/checkout@v4"
+      - name: "Install cowsay"
+        run: "sudo apt-get install cowsay"
+      - name: "Print a repo-specific cowsay message"
+        run: "/usr/games/cowsay <.cowsay.txt"

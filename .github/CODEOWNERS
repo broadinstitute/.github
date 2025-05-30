@@ -7,5 +7,5 @@
 #
 # The codeowner should be a group, not an individual user, to ensure continuity
 # of maintenance through personnel turnover.
-#/.github/workflow-templates/devnull-example.yml             @broadinstitute/devnull
-#/.github/workflow-templates/devnull-example.properties.json @broadinstitute/devnull
+/.github/workflow-templates/bits-example.yml             @broadinstitute/devnull
+/.github/workflow-templates/bits-example.properties.json @broadinstitute/devnull

@@ -1,0 +1,8 @@
+{
+    "name": "BITS example workflow template",
+    "description": "Print a custom cowsay message. No production use.",
+    "categories": [
+        "testing"
+    ],
+    "labels": ["preview"]
+}
