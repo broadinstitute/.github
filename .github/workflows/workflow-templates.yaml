@@ -1,0 +1,31 @@
+---
+name: "Validate workflow templates"
+
+"on":
+  pull_request:
+    branches:
+      - "main"
+
+jobs:
+  lint:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Checkout repo"
+        uses: "actions/checkout@v4"
+      - name: "Smoke check metadata files"
+        run: >-
+          cat .github/workflow-templates/*.json | jq > /dev/null
+      - name: "Lint template files"
+        run: >-
+          yamllint -s .github/workflow-templates/*.yml
+      - name: "Ensure '.yml' file extension"
+        run: >-
+          [[ -z "$(find .github/workflow-templates/ -maxdepth 1 -name "*.yaml")" ]]
+        # Any namespaced filename will have at least one '-'. Kebab case should
+        # have no underscores or capital letters.
+      - name: "Check for kebab case/namespacing"
+        run: >-
+          [[ -z "$(find .github/workflow-templates -maxdepth 1 -regextype egrep -regex '^.*/[^-]*$|^.*[_A-Z].*$')" ]]
+      - name: "Ensure all templates are in CODEOWNERS"
+        run: >-
+          for filename in .github/workflow-templates/*; do grep "/${filename}" ./.github/CODEOWNERS; done
