@@ -1,0 +1,8 @@
+---
+site_name: "Broad Institute default files"
+
+nav:
+  - Home: "README.md"
+
+plugins:
+  - "techdocs-core"

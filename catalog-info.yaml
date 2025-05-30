@@ -1,0 +1,18 @@
+---
+apiVersion: "backstage.io/v1alpha1"
+kind: "Component"
+metadata:
+  name: "dot-github"
+  title: "Broad Institute default files"
+  description: >-
+    Files defined here either propogate or define certain behavior in all
+    broadinstitute repostiories.
+  tags:
+    - "github"
+  annotations:
+    github.com/project-slug: "broadinstitute/.github"
+    backstage.io/techdocs-ref: "dir:."
+spec:
+  type: "library"
+  owner: "devnull"
+  lifecycle: "production"

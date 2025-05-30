@@ -1,0 +1,11 @@
+* @broadinstitute/devnull
+
+# Add your team as codeowners to files you own so that you can modify them
+# without BITS approval. List your workflows explicitly; do not use wildcards
+# here. BITS should proofread new templates before they are visible to the
+# entire organization. After that, maintenance is self-serve.
+#
+# The codeowner should be a group, not an individual user, to ensure continuity
+# of maintenance through personnel turnover.
+/.github/workflow-templates/bits-example.yml             @broadinstitute/devnull
+/.github/workflow-templates/bits-example.properties.json @broadinstitute/devnull

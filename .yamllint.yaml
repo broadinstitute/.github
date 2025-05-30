@@ -1,0 +1,13 @@
+---
+extends: "default"
+
+rules:
+  braces:
+    forbid: true
+  brackets:
+    forbid: true
+  indentation:
+    spaces: 2
+  quoted-strings:
+    required: true
+    quote-type: "double"
