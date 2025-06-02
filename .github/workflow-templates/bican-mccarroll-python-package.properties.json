@@ -1,0 +1,8 @@
+{
+    "name": "BICAN McCarroll python package Workflow",
+    "description": "Invoke the BICAN McCarroll reusable python package CI workflow.",
+    "categories": [
+        "Python",
+        "continuous-integration"
+    ]
+}

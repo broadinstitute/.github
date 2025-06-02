@@ -1,0 +1,8 @@
+{
+    "name": "BICAN McCarroll R package Workflow",
+    "description": "Invoke the BICAN McCarroll reusable R package CI workflow.",
+    "categories": [
+        "R",
+        "continuous-integration"
+    ]
+}

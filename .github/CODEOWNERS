@@ -9,3 +9,9 @@
 # of maintenance through personnel turnover.
 /.github/workflow-templates/bits-example.yml             @broadinstitute/devnull
 /.github/workflow-templates/bits-example.properties.json @broadinstitute/devnull
+/.github/workflow-templates/bican-mccarroll-r-package.yml @broadinstitute/bican-mccarroll-admin
+/.github/workflow-templates/bican-mccarroll-r-package.properties.json @broadinstitute/bican-mccarroll-admin
+/.github/workflow-templates/bican-mccarroll-python-package.yml @broadinstitute/bican-mccarroll-admin
+/.github/workflow-templates/bican-mccarroll-python-package.properties.json @broadinstitute/bican-mccarroll-admin
+/.github/workflow-templates/bican-mccarroll-roxygen.yml @broadinstitute/bican-mccarroll-admin
+/.github/workflow-templates/bican-mccarroll-roxygen.properties.json @broadinstitute/bican-mccarroll-admin
