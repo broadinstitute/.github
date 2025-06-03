@@ -76,6 +76,6 @@ patterns. To the extent possible, try to make your workflow generalizable:
 While we want to keep this repo manageable, we also want to give teams enough
 leeway to maintain their own tools without constantly getting in their way. When
 adding your workflow template, add both files to
-[CODEOWNERS](./.github/CODEOWNERS) along with your team. This way, after the
+[CODEOWNERS](https://github.com/broadinstitute/.github/blob/main/.github/CODEOWNERS) along with your team. This way, after the
 initial PR, teams can update and modify their own workflows without waiting on
 review from BITS. More details are available in the CODEOWNERS file.
