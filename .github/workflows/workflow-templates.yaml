@@ -14,18 +14,18 @@ jobs:
         uses: "actions/checkout@v4"
       - name: "Smoke check metadata files"
         run: >-
-          cat .github/workflow-templates/*.json | jq > /dev/null
+          cat workflow-templates/*.json | jq > /dev/null
       - name: "Lint template files"
         run: >-
-          yamllint -s .github/workflow-templates/*.yml
+          yamllint -s workflow-templates/*.yml
       - name: "Ensure '.yml' file extension"
         run: >-
-          [[ -z "$(find .github/workflow-templates/ -maxdepth 1 -name "*.yaml")" ]]
+          [[ -z "$(find workflow-templates/ -maxdepth 1 -name "*.yaml")" ]]
         # Any namespaced filename will have at least one '-'. Kebab case should
         # have no underscores or capital letters.
       - name: "Check for kebab case/namespacing"
         run: >-
-          [[ -z "$(find .github/workflow-templates -maxdepth 1 -regextype egrep -regex '^.*/[^-]*$|^.*[_A-Z].*$')" ]]
+          [[ -z "$(find workflow-templates -maxdepth 1 -regextype egrep -regex '^.*/[^-]*$|^.*[_A-Z].*$')" ]]
       - name: "Ensure all templates are in CODEOWNERS"
         run: >-
-          for filename in .github/workflow-templates/*; do grep "/${filename}" ./.github/CODEOWNERS; done
+          for filename in workflow-templates/*; do grep "/${filename}" ./.github/CODEOWNERS; done
