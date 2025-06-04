@@ -1,7 +1,8 @@
 ---
 # Instructions for using this template:
 # 1. Replace <package_name> below with the short name of the python package.
-#    E.g. if the package is bican.mccarroll.mypackage, replace "<package_name>" with "mypackage".
+#    E.g. if the package is bican.mccarroll.mypackage, replace "<package_name>"
+#    with "mypackage".
 # 2. Name the workflow file R-<package_name>.yml, e.g. R-mypackage.yml
 # 3. Commit the above changes
 
@@ -11,10 +12,10 @@
 "on":
   push:
     branches:
-      - "main"
+      - $default-branch  # yamllint disable-line rule:quoted-strings
   pull_request:
     branches:
-      - "main"
+      - $default-branch  # yamllint disable-line rule:quoted-strings
     paths:
       - "R/bican.mccarroll.<package_name>/**"
 
