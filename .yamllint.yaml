@@ -8,6 +8,3 @@ rules:
     forbid: true
   indentation:
     spaces: 2
-  quoted-strings:
-    required: true
-    quote-type: "double"

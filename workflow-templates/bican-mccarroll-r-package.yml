@@ -12,10 +12,10 @@
 "on":
   push:
     branches:
-      - $default-branch  # yamllint disable-line rule:quoted-strings
+      - $default-branch
   pull_request:
     branches:
-      - $default-branch  # yamllint disable-line rule:quoted-strings
+      - $default-branch
     paths:
       - "R/bican.mccarroll.<package_name>/**"
 
